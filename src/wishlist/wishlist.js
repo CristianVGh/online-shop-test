@@ -15,21 +15,20 @@ export const WishList = () =>{
     return function cleanup() {
       ns.removeObserver(this, NOTIF_WISHLIST_CHANGED);
     };
-  }, [wishList]);
-  var i = 0;
+  }, []);
 
   const createWishList = () => {
     let list;
     
     list = wishList.map((product) => 
-    <ProductCondensed product={product} key={product._id}/>
+      <ProductCondensed product={product} key={product._id}/>
     );
  
     return (list);
-  } //asdssdassasda
+  }
 
   const onWishListChanged = (newWishList) => {
-    setWishList(newWishList);
+    setWishList([...newWishList]);
     console.log(newWishList.length);
   }
 

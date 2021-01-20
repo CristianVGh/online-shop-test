@@ -21,7 +21,7 @@ export const Product = (props) =>{
     setOnWishList(ds.itemOnWishList(props.product));
   }
 
-
+//dds
   const onButtonClicked = () => {
     if(onWishList) {
       ds.removeWishListItem(props.product)

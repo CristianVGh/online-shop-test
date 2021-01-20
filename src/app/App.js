@@ -12,7 +12,7 @@ function App() {
   const [error, setError] = useState(null);
 
   const loadData = (url) => {
-    fetch(url)
+   fetch(url)
     .then(results => results.json())
     .then(products => {
       setProducts(products);
@@ -33,11 +33,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Swag-Shop
-        </p>
-        
+        <p>Swag-Shop</p>
       </header>
+
       <div className="container-fluid App-main">
         <div className="row">
           <div className="col-sm-8">
@@ -50,8 +48,8 @@ function App() {
             <WishList />
           </div>
         </div>
-        
       </div>
+
     </div>
   );
 }

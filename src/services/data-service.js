@@ -11,7 +11,6 @@ class DataService {
         if (!instance) {
             instance = this;
         }
-
         return instance;
     }
 
