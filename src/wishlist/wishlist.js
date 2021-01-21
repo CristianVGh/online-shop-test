@@ -29,7 +29,6 @@ export const WishList = () =>{
 
   const onWishListChanged = (newWishList) => {
     setWishList([...newWishList]);
-    console.log(newWishList.length);
   }
 
   if (wishList.length === 0) {
@@ -47,7 +46,7 @@ export const WishList = () =>{
         <div className="card-body">
             <h4 className="card-title">Wish List</h4>
             <ul className="list-group">
-              {console.log(wishList.length)} {createWishList()}
+              {createWishList()}
             </ul>
         </div>
     </div>                                                          

@@ -21,16 +21,12 @@ export const Product = (props) =>{
     setOnWishList(ds.itemOnWishList(props.product));
   }
 
-//dds
   const onButtonClicked = () => {
     if(onWishList) {
       ds.removeWishListItem(props.product)
-      console.log("Removed Product " + props.product.title);
     } else {
       ds.addWishListItem(props.product);
-      console.log("Added product " + props.product.title);
     }
-  
   }
 
   
@@ -53,7 +49,5 @@ export const Product = (props) =>{
     </div>                                                              
   )
 }
-
-//ss
 
 export default Product;
