@@ -6,7 +6,8 @@
  
  ## Launch
  
- inside the folder online-shop-test
+ Inside the folder online-shop-test
  > npm start
+ 
  Inside the folder swag-shop-api
  > node server.js
