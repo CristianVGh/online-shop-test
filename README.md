@@ -4,9 +4,9 @@
  
  modified the final project in the course to use hooks
  
- ##Launch
+ ## Launch
  
  inside the folder online-shop-test
-  npm start
+ > npm start
  Inside the folder swag-shop-api
-  node server.js
+ > node server.js
